@@ -5,9 +5,9 @@
 2020-03-25\ PDE/data/**/*.png
 2020-07\ IBS/data/
 2020-07\ IBS/data_225_frequent_output/
-2020-07\ PDE\ asymmetry/data/**/*.png
-2020-07\ PDE\ asymmetry/data_for_comparing_with_ibs/**/*.png
-2020-07\ Supplemental\ PDE/test_run_225_2/**/*.png
+2020-07\ PDE\ asymmetry/data/
+2020-07\ PDE\ asymmetry/data_for_comparing_with_ibs/
+2020-07\ Supplemental\ PDE/test_run_225_2/
 2020-08\ IBS\ 3d/data/
 2020-08\ IBS\ asymmetry/data/
 2020-08\ IBS\ bivariate/data/
