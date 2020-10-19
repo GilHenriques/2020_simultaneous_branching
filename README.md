@@ -15,4 +15,4 @@ Raw data files generated frm IBS and PDE are not included because they are too l
 The repository includes the IBS summary data generated from the raw data, in the form of `RDS` files, as well as the `R` files used to generate summary data.
 I also included all `R` code necessary to generate figures from summary data (in the IBS case) or from raw data (in the OSS/PDE case).
 
-Feel free to email me at ghenris-at-gmail-dot-com for any questions.
+Feel free to email me at gilhenris-at-gmail-dot-com for any questions.
