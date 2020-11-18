@@ -22,6 +22,6 @@ The figure of the fitness landscape was generated in *Mathematica* using the fil
 
 ## More
 
-The derivations for Appendix F (stability to large mutations) are in the *Mathematica* notebook `AppendixF.nb`
+The derivations for Appendix F (stability to large mutations) are in the *Mathematica* notebook `AppendixF.nb`; a pdf version of the same file, `AppendixF.pdf`, is also included.
 
 Feel free to email me at gilhenris-at-gmail-dot-com for any questions.
