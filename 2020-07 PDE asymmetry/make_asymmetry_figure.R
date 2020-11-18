@@ -80,15 +80,18 @@ plot_G <- readRDS("2020-08 IBS asymmetry/G_plot_rds")
 
 plot_final <- cowplot::plot_grid(
   cowplot::plot_grid(
-    cowplot::plot_grid(plot_oss, plot_ibs, nrow = 2, labels = c("A", "B")),
-    (plot_G + theme(text = element_text(size = 10), axis.text = element_text(size = 10))), 
+    cowplot::plot_grid(
+      (plot_oss + labs(subtitle = "OSS branching direction with asymmetric games") + theme(plot.subtitle = element_text(size = 10),  plot.title.position = "plot")),
+      (plot_ibs + labs(subtitle = "IBS branching direction with asymmetric games") + theme(plot.subtitle = element_text(size = 10), plot.title.position = "plot")),
+      nrow = 2, labels = c("A", "B")),
+    (plot_G + labs(subtitle = "       G-matrix orientation during approach\n       to equilibrium with asymmetric games") + theme(text = element_text(size = 10), axis.text = element_text(size = 10), plot.subtitle = element_text(size = 10), plot.title.position = "plot")), 
     nrow = 1, rel_widths = c(1, 0.6), labels = c(NA, "C")
   ),
-  cowplot::plot_grid((plot_angles + theme(text = element_text(size = 10), axis.text = element_text(size = 10))), 
-                     (plot_freqs + theme(text = element_text(size = 10), axis.text = element_text(size = 10))), 
-                     rel_widths = c(1.5, 2.5), labels = c("D", "E"),
-                     align = "h", axis = "bt"),
+  cowplot::plot_grid((plot_angles + labs(subtitle = "PDE branching direction with asymmetric games") + theme(text = element_text(size = 10), axis.text = element_text(size = 10), plot.subtitle = element_text(size = 10))), 
+                     (plot_freqs + labs(subtitle = "       Example PDE dynamics with asymmetric games") + theme(text = element_text(size = 10), axis.text = element_text(size = 10), plot.subtitle = element_text(size = 10), plot.title.position = "plot")), 
+                     rel_widths = c(1.75, 2.25), labels = c("D", "E"),
+                     align = "h"),
   ncol = 1, rel_heights = c(1, 0.55)
 )
 
-ggsave(filename = "2020-07 PDE asymmetry/figure_asymmetry.pdf", plot = plot_final, width = 9, height = 6)
+ggsave(filename = "2020-07 PDE asymmetry/figure_asymmetry.pdf", plot = plot_final, width = 9.3, height = 6.6)
